@@ -1,0 +1,13 @@
+@use "./main.scss" as *;
+.Monster-wrapper {
+  border: 2px solid black;
+  color: $primary-color;
+  font-size: $attribut-sizes;
+}
+.header {
+  font-size: $attribut-sizes;
+}
+
+.Monster-card {
+  font-family: $font-stack;
+}

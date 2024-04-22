@@ -1,4 +1,3 @@
-import "./App.css";
 import InfoBox from "./Components/InfoBox/InfoBox";
 import Monster from "./Components/Monster/Monster";
 
