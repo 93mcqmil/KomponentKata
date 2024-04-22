@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Rodent",
+    "type": "Small Animal",
+    "strength": 3,
+    "speed": 8,
+    "health": 5
+  },
+  {
+    "name": "Cave Troll",
+    "type": "Troll",
+    "strength": 9,
+    "speed": 4,
+    "health": 10
+  },
+  {
+    "name": "Sea Monster",
+    "type": "Beast",
+    "strength": 7,
+    "speed": 6,
+    "health": 12
+  },
+  {
+    "name": "Forest Hawk",
+    "type": "Bird",
+    "strength": 5,
+    "speed": 10,
+    "health": 7
+  },
+  {
+    "name": "Volcanic Golem",
+    "type": "Golem",
+    "strength": 12,
+    "speed": 2,
+    "health": 15
+  },
+  {
+    "name": "Spiderweb Manticore",
+    "type": "Manticore",
+    "strength": 10,
+    "speed": 7,
+    "health": 14
+  },
+  {
+    "name": "Frost Shadow",
+    "type": "Spirit",
+    "strength": 6,
+    "speed": 9,
+    "health": 8
+  },
+  {
+    "name": "Golden Dragon",
+    "type": "Dragon",
+    "strength": 15,
+    "speed": 5,
+    "health": 20
+  },
+  {
+    "name": "Dark Alpine Lord",
+    "type": "Alp",
+    "strength": 8,
+    "speed": 6,
+    "health": 11
+  },
+  {
+    "name": "Fire Wolf",
+    "type": "Wolf",
+    "strength": 11,
+    "speed": 8,
+    "health": 13
+  }
+]
