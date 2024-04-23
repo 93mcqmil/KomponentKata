@@ -1,5 +1,6 @@
 import monster from "../../Data/Data.json";
 import Monster from "../Monster/Monster";
+
 const InfoBox = () => {
   const data = monster;
   console.log(monster);

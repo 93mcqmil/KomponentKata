@@ -1,11 +1,13 @@
+import { GlobalStateProvider } from "./Components/GlobalStateContext";
 import InfoBox from "./Components/InfoBox/InfoBox";
-import Monster from "./Components/Monster/Monster";
+import Monsters from "./Components/Monster/Monster";
 
 function App() {
   return (
-    <>
+    <GlobalStateProvider>
+      <Monsters />
       <InfoBox />
-    </>
+    </GlobalStateProvider>
   );
 }
 
