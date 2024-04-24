@@ -9,6 +9,7 @@ function App() {
     <GlobalStateProvider>
       <Monsters />
       <MonsterDataLoader />
+      <AddMonsterForm />
     </GlobalStateProvider>
   );
 }
