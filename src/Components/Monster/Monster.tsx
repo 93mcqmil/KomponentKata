@@ -4,12 +4,13 @@ import { GlobalStateContext } from "../GlobalStateContext";
 
 const Monsters: React.FC = () => {
   const { monsters } = useContext(GlobalStateContext);
+
   return (
     <>
       {monsters.map((monster, index) => (
-        <div>
+        <div key={index}>
           <h3>Monster</h3>
-          <p key={index}>
+          <p>
             Name: {monster.name} <br />
             type: {monster.type} <br />
             strength: {monster.strength} <br />

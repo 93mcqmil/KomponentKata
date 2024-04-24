@@ -7,7 +7,7 @@ type GlobalState = {
 };
 
 //Define the type for a Monster which tells us what information each monster has.
-type Monster = {
+export type Monster = {
   name: string;
   type: string;
   strength: number;
@@ -22,11 +22,10 @@ export const GlobalStateContext = createContext<GlobalState>({
   addMonster: (newMonster: Monster) => {}, // use the newMonster parameter to update the state
 });
 
-//Create a provider component to wrap around my application. (its like a house where out monster tracking box lives)
+//Create a provider component to wrap around my application. (its like a house where our monster tracking box lives)
 export const GlobalStateProvider = ({ children }: { children: ReactNode }) => {
   //Define state variables and functions to update the state(Here we also store our monsters)
   const [monsters, setMonsters] = useState<Monster[]>([]);
-  console.log("Datan:", monsters);
 
   const addMonster = (newMonster: Monster) => {
     setMonsters([...monsters, newMonster]);
