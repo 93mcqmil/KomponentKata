@@ -3,13 +3,14 @@ import Monster from "../Monster/Monster";
 
 const InfoBox = () => {
   const data = monster;
-  console.log(monster);
+  console.log("Data:", monster);
   return (
     <>
-      {data.map((monster) => {
+      {data.map((monster, index) => {
+        console.log("Monster:", monster);
         return (
           <Monster
-            key={monster.name}
+            key={index}
             name={monster.name}
             type={monster.type}
             strength={monster.strength}

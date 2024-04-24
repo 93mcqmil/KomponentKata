@@ -26,6 +26,7 @@ export const GlobalStateContext = createContext<GlobalState>({
 export const GlobalStateProvider = ({ children }: { children: ReactNode }) => {
   //Define state variables and functions to update the state(Here we also store our monsters)
   const [monsters, setMonsters] = useState<Monster[]>([]);
+  console.log("Datan:", monsters);
 
   const addMonster = (newMonster: Monster) => {
     setMonsters([...monsters, newMonster]);

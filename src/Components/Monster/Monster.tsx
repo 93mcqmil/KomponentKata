@@ -5,11 +5,10 @@ import { GlobalStateContext } from "../GlobalStateContext";
 const Monsters: React.FC = () => {
   const { monsters } = useContext(GlobalStateContext);
   return (
-    <div>
-      <button></button>
+    <>
       {monsters.map((monster, index) => (
-        <div key={index} className='Monster-wrapper'>
-          <h3 className='header'>Monster</h3>
+        <div>
+          <h3>Monster</h3>
           <p>
             Name: {monster.name} <br />
             type: {monster.type} <br />
@@ -19,7 +18,7 @@ const Monsters: React.FC = () => {
           </p>
         </div>
       ))}
-    </div>
+    </>
   );
 };
 export default Monsters;
