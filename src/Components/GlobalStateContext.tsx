@@ -18,8 +18,8 @@ type Monster = {
 // create a context with initial state values
 // (this creates a special container called GlobalStateContext which is like a big box where we keep track of our monsters.)
 export const GlobalStateContext = createContext<GlobalState>({
-  monsters: [], // at first this box is empty because we dont have any monsters
-  addMonster: () => {}, // we also have a way to add monsters. but for now its just an empy instruction
+  monsters: [], // initially the list of monsters is empty
+  addMonster: (newMonster: Monster) => {}, // use the newMonster parameter to update the state
 });
 
 //Create a provider component to wrap around my application. (its like a house where out monster tracking box lives)
