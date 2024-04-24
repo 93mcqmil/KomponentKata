@@ -18,7 +18,7 @@ type Monster = {
 // create a context with initial state values
 // (this creates a special container called GlobalStateContext which is like a big box where we keep track of our monsters.)
 export const GlobalStateContext = createContext<GlobalState>({
-  monsters: [], // initially the list of monsters is empty
+  monsters: [], // monsters loaded from json
   addMonster: (newMonster: Monster) => {}, // use the newMonster parameter to update the state
 });
 

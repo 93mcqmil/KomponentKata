@@ -9,7 +9,7 @@ const Monsters: React.FC = () => {
       {monsters.map((monster, index) => (
         <div>
           <h3>Monster</h3>
-          <p>
+          <p key={index}>
             Name: {monster.name} <br />
             type: {monster.type} <br />
             strength: {monster.strength} <br />

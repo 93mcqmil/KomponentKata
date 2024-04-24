@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { GlobalStateContext } from "./GlobalStateContext";
-import monster from "../Data/Data.json";
+import monsters from "../Data/Data.json";
 
 //komponent för att läsa in monsterdata från json-fil genom att använda addMonster funktionen från GlobalStateContext
 const MonsterDataLoader = () => {
@@ -15,7 +15,7 @@ const MonsterDataLoader = () => {
 
   useEffect(() => {
     //läs in monster från JSON-fil och lägg till varje monster i den globala staten
-    monster.forEach((monster) => {
+    monsters.forEach((monster) => {
       addMonster(monster);
     });
   }, []); // tom array för att säkerställa att effekten bara körs en gång när komponenten monteras
@@ -32,23 +32,53 @@ const MonsterDataLoader = () => {
   const handleAddMonster = () => {
     addMonster(newMonsterData);
     //reset input fields after adding new monster
-    const setNewMonsterData = {
+    setNewMonsterData({
       name: "",
       type: "",
       strength: 0,
       speed: 0,
       health: 0,
-    };
+    });
   };
   return (
     <>
-      <input
-        type='text'
-        name='name'
-        placeholder='name'
-        value={newMonsterData.name}
-        onChange={handleInputChange}
-      />
+      <div className='Input-form'>
+        <input
+          type='text'
+          name='name'
+          placeholder='name'
+          value={newMonsterData.name}
+          onChange={handleInputChange}
+        />
+        <input
+          type='text'
+          name='type'
+          placeholder='type'
+          value={newMonsterData.type}
+          onChange={handleInputChange}
+        />
+        <input
+          type='text'
+          name='strength'
+          placeholder='strength'
+          value={newMonsterData.strength}
+          onChange={handleInputChange}
+        />
+        <input
+          type='text'
+          name='speed'
+          placeholder='speed'
+          value={newMonsterData.speed}
+          onChange={handleInputChange}
+        />
+        <input
+          type='text'
+          name='health'
+          placeholder='health'
+          value={newMonsterData.health}
+          onChange={handleInputChange}
+        />
+      </div>
       <button onClick={handleAddMonster}>Add Monster</button>
     </>
   );
