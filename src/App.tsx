@@ -7,9 +7,9 @@ import MonsterDataLoader from "./Components/MonsterData";
 function App() {
   return (
     <GlobalStateProvider>
-      <Monsters />
       <MonsterDataLoader />
       <AddMonsterForm />
+      <Monsters />
     </GlobalStateProvider>
   );
 }

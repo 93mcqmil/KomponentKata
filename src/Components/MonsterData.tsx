@@ -12,7 +12,7 @@ const MonsterDataLoader = () => {
       addMonster(monster);
     });
   }, []); // Empty dependency array ensures this effect runs only once after initial render
-
+  console.log("Dependency:", monsters);
   return null;
 };
 
